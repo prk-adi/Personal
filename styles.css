@@ -1,0 +1,135 @@
+/* General Styles */
+body {
+    font-family: 'Great Vibes', cursive;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  header {
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    padding: 50px 20px;
+    color: white;
+  }
+  
+  header h1 {
+    font-size: 4rem;
+    margin: 0;
+  }
+  
+  header p {
+    font-size: 1.5rem;
+    margin: 10px 0 0;
+  }
+  
+  /* Photo Gallery */
+  #gallery {
+    padding: 20px;
+  }
+  
+  .photo-grid {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .photo-grid img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .photo-grid img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Love Story Section */
+  #love-story {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #love-story h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  #love-story p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  /* Footer */
+  footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  /* Couple Name Animation */
+.couple-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+    gap: 10px;
+  }
+  
+  .name {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+  }
+  
+  .name:nth-child(1) {
+    animation-delay: 0.5s;
+  }
+  
+  .name:nth-child(3) {
+    animation-delay: 1s;
+  }
+  
+  .ampersand {
+    font-size: 3rem;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 0.75s;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
